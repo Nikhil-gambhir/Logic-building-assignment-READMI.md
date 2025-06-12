@@ -5,7 +5,7 @@ import java.util.*;
 
 class Layout
 {
-    public static int Count(int Arr[], int iLength )
+    public  int Count(int Arr[], int iLength )
   {
     int count = 0;
     int i = 0;
@@ -41,9 +41,11 @@ class program91
         Arr[iCnt] = sobj.nextInt();
 
     }
-      bRet= Layout.Count(Arr , iSize);
+      Layout mobj = new Layout();
 
-      System.out.println("Element even number count is  :" + result);
+      bRet= mobj.Count(Arr , iSize);
+
+      System.out.println("Element even number count is  :" + bRet);
 
        
      
