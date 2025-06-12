@@ -6,7 +6,7 @@ import java.util.*;
 
 class Layout
 {
-    public static void Range(int Arr[], int iLength , int iStart, int iEnd )
+    public  void Range(int Arr[], int iLength , int iStart, int iEnd )
   {
      int i = 0;
      
@@ -53,7 +53,8 @@ class program99
         Arr[iCnt] = sobj.nextInt();
 
     }
-        Layout.Range(Arr,iSize,iValue1,iValue2);
+             Layout mobj = new Layout();
+        mobj.Range(Arr,iSize,iValue1,iValue2);
 
 
 
