@@ -5,7 +5,7 @@ import java.util.*;
 
 class Layout
 {
-    public static void Display(int Arr[], int iLength )
+    public  void Display(int Arr[], int iLength )
   {
     int i = 0;
     for( i = 0; i < iLength; i++)
@@ -40,7 +40,9 @@ class program87
     }   
       System.out.println("Element Divisible by 5 are :\n");
 
-       Layout.Display(number,iSize);
+      Layout mobj = new Layout();
+
+       mobj.Display(number,iSize);
 
        sobj.close();
 }
