@@ -5,7 +5,7 @@ import java.util.*;
 
 class Layout
 {
-    public static int Frequency(int Arr[], int iLength )
+    public  int Frequency(int Arr[], int iLength )
   {
     int evenCount = 0;
     int oddCount = 0;
@@ -45,9 +45,12 @@ class program92
         Arr[iCnt] = sobj.nextInt();
 
     }
-      int result= Layout.Frequency(Arr , iSize);
+             
+       Layout mobj = new Layout();
 
-      System.out.println("Result is  :" + result);
+      int iRet= mobj.Frequency(Arr , iSize);
+
+      System.out.println("Result is  :" + iRet);
 
        
      
