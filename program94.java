@@ -5,7 +5,7 @@ import java.util.*;
 
 class Layout
 {
-    public static int Frequency(int Arr[], int iLength )
+    public  int Frequency(int Arr[], int iLength )
   {
      int i = 0, iCount = 0;
 
@@ -41,7 +41,9 @@ class program94
         Arr[iCnt] = sobj.nextInt();
 
     }
-       iRet= Layout.Frequency(Arr , iSize);
+        Layout mobj = new Layout();
+
+       iRet= mobj.Frequency(Arr , iSize);
 
       System.out.println("11 Number is  :" + iRet);
   
