@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 class Layout
 {
-    public static boolean Check(int Arr[], int iLength )
+    public  boolean Check(int Arr[], int iLength )
   {
         int i = 0;
 
@@ -40,8 +40,10 @@ class program93
         System.out.print("Enter element:"+(iCnt + 1) + ":");
         Arr[iCnt] = sobj.nextInt();
 
-    }
-     bRet = Layout.Check(Arr,iSize); 
+    } 
+      Layout mobj = new Layout();
+
+     bRet = mobj.Check(Arr,iSize); 
 
       if(bRet == true)
       {
