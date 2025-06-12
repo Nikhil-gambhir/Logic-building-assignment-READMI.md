@@ -5,7 +5,7 @@ import java.util.*;
 
 class Layout
 {
-    public static int FistOcc(int Arr[], int iLength , int iNo )
+    public  int FistOcc(int Arr[], int iLength , int iNo )
   {
      int i = 0;
 
@@ -45,7 +45,9 @@ class program97
         Arr[iCnt] = sobj.nextInt();
 
     }
-       iRet= Layout.FistOcc( Arr,iSize,iValue);
+         Layout mobj = new Layout();
+
+       iRet= mobj.FistOcc( Arr,iSize,iValue);
 
        if(icet == -1)
        {
