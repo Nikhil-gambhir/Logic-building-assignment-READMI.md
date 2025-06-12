@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 class Layout
 {
-    public static boolean Check(int Arr[], int iLength,int iNo )
+    public  boolean Check(int Arr[], int iLength,int iNo )
   {
         int i = 0;
 
@@ -44,7 +44,9 @@ class program96
         Arr[iCnt] = sobj.nextInt();
 
     }
-     bRet = Layout.Check(Arr,iSize,iValue); 
+     Layout mobj = new Layout();
+
+     bRet = mobj.Check(Arr,iSize,iValue); 
 
       if(bRet == true)
       {
