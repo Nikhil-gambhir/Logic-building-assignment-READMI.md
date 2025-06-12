@@ -5,7 +5,7 @@ import java.util.*;
 
 class Layout
 {
-    public static int Frequency(int Arr[], int iLength , int iNo )
+    public  int Frequency(int Arr[], int iLength , int iNo )
   {
      int i = 0, iCount = 0;
 
@@ -44,7 +44,9 @@ class program95
         Arr[iCnt] = sobj.nextInt();
 
     }
-       iRet= Layout.Frequency(Arr , iSize,iValue);
+        Layout mobj = new Layout();
+
+       iRet= mobj.Frequency(Arr , iSize,iValue);
 
       System.out.println(" Same Number is  :" + iRet);
   
