@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 class Layout
 {
-    public static int Product(int Arr[], int iLength)
+    public  int Product(int Arr[], int iLength)
   {
      int i = 0,  iProduct = 1;
     int iOddCount = 0; 
@@ -49,7 +49,9 @@ class program100
         Arr[iCnt] = sobj.nextInt();
 
     }
-       iRet= Layout.Product( Arr,iSize);
+         Layout mobj = new Layout();
+
+       iRet= mobj.Product( Arr,iSize);
    
        System.out.println(" Product is :" + iRet);
        
