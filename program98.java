@@ -7,7 +7,7 @@ import javax.naming.spi.DirStateFactory.Result;
 
 class Layout
 {
-    public static int LastOcc(int Arr[], int iLength , int iNo )
+    public  int LastOcc(int Arr[], int iLength , int iNo )
   {
      int i = 0;
 
@@ -47,7 +47,9 @@ class program98
         Arr[iCnt] = sobj.nextInt();
 
     }
-       iRet= Layout.LastOcc( Arr,iSize,iValue);
+         Layout mobj = new Layout();
+    
+       iRet= mobj.LastOcc( Arr,iSize,iValue);
 
        
 
